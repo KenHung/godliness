@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customizing your brand and design settings</title>
+    <link rel="stylesheet" href="/assets/built/screen.css?v=2c77df2a9b">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,700i">
+
+    <script>
+        var siteUrl = 'http://localhost:2368';
+    </script>
+
+    <link rel="canonical" href="http://localhost:2368/design/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="http://localhost:2368/design/amp/" />
+    
+    <meta property="og:site_name" content="操練敬虔" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Customizing your brand and design settings" />
+    <meta property="og:description" content="How to tweak a few settings in Ghost to transform your site from a generic template to a custom brand with style and personality." />
+    <meta property="og:url" content="http://localhost:2368/design/" />
+    <meta property="og:image" content="https://static.ghost.org/v4.0.0/images/publishing-options.png" />
+    <meta property="article:published_time" content="2021-03-26T12:13:49.000Z" />
+    <meta property="article:modified_time" content="2021-03-26T12:13:45.000Z" />
+    <meta property="article:tag" content="Getting Started" />
+    
+    <meta property="article:publisher" content="https://www.facebook.com/ghost" />
+    <meta property="article:author" content="https://www.facebook.com/ghost" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Customizing your brand and design settings" />
+    <meta name="twitter:description" content="How to tweak a few settings in Ghost to transform your site from a generic template to a custom brand with style and personality." />
+    <meta name="twitter:url" content="http://localhost:2368/design/" />
+    <meta name="twitter:image" content="https://static.ghost.org/v4.0.0/images/publishing-options.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Ghost" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Getting Started" />
+    <meta name="twitter:site" content="@ghost" />
+    <meta name="twitter:creator" content="ghost" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="1210" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "操練敬虔",
+        "url": "http://localhost:2368/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/favicon.ico",
+            "width": 48,
+            "height": 48
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Ghost",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://static.ghost.org/v4.0.0/images/ghost-user.png",
+            "width": 400,
+            "height": 400
+        },
+        "url": "http://localhost:2368/author/ghost/",
+        "sameAs": [
+            "https://ghost.org",
+            "https://www.facebook.com/ghost",
+            "https://twitter.com/ghost"
+        ]
+    },
+    "headline": "Customizing your brand and design settings",
+    "url": "http://localhost:2368/design/",
+    "datePublished": "2021-03-26T12:13:49.000Z",
+    "dateModified": "2021-03-26T12:13:45.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://static.ghost.org/v4.0.0/images/publishing-options.png",
+        "width": 2000,
+        "height": 1210
+    },
+    "keywords": "Getting Started",
+    "description": "How to tweak a few settings in Ghost to transform your site from a generic template to a custom brand with style and personality.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 4.1" />
+    <link rel="alternate" type="application/rss+xml" title="操練敬虔" href="http://localhost:2368/rss/" />
+    <script defer src="https://unpkg.com/@tryghost/portal@~1.0.0/umd/portal.min.js" data-ghost="http://localhost:2368/"></script><style> .gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style><style>:root {--ghost-accent-color: #4499ff;}</style>
+</head>
+
+<body class="post-template tag-getting-started">
+    <div class="site">
+        <header class="site-header">
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-left">
+                <a class="logo" href="http://localhost:2368">
+        <span class="logo-text">操練敬虔</span>
+</a>            </div>
+            <div class="navbar-right">
+                    <nav class="main-nav hidden-xs hidden-sm hidden-md">
+                            <a class="menu-item menu-item-shou-ye"
+        href="http://localhost:2368/">首頁</a>
+    <a class="menu-item menu-item-guan-yu"
+        href="http://localhost:2368/about/">關於</a>
+    <a class="menu-item menu-item-fan-jian"
+        href="http://localhost:2368/tag/getting-started/">繁简</a>
+
+                    </nav>
+                    <div class="burger hidden-lg hidden-xl">
+    <div class="burger-bar"></div>
+    <div class="burger-bar"></div>
+</div>                    <div class="mobile-menu hidden-lg hidden-xl">
+    <div class="container">
+            <nav class="mobile-nav">
+                    <a class="menu-item menu-item-shou-ye"
+        href="http://localhost:2368/">首頁</a>
+    <a class="menu-item menu-item-guan-yu"
+        href="http://localhost:2368/about/">關於</a>
+    <a class="menu-item menu-item-fan-jian"
+        href="http://localhost:2368/tag/getting-started/">繁简</a>
+
+            </nav>
+    </div>
+</div>            </div>
+        </div>
+    </div>
+</header>        <div class="site-content">
+            
+<div class="content-area">
+    <main class="site-main">
+            <article class="post tag-getting-started single">
+                <header class="post-header container medium">
+    <h1 class="post-title">
+        
+        Customizing your brand and design settings
+        
+    </h1>
+        <div class="post-meta">
+        <div class="post-meta-left">
+            <div class="post-author">
+            <a class="post-author-image-link" href="/author/ghost/">
+                <img class="post-author-image lazyload"
+                    data-src="https://static.ghost.org/v4.0.0/images/ghost-user.png"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    alt="Ghost">
+            </a>
+</div>        </div>
+        <div class="post-meta-right">
+            <div class="post-author-name">
+                <a class="post-author-name-link"
+                        href="/author/ghost/">Ghost</a>
+            </div>
+            <div class="post-meta-bottom">
+                <div class="post-date">
+                    <time datetime="2021-03-26">
+                        Mar 26, 2021
+                    </time>
+                </div>
+                <div class="post-length">3 min read</div>
+            </div>
+        </div>
+</div></header>                    <div class="post-media container large">
+        <div class="u-placeholder">
+            <a class="post-image-link" href="/design/">
+                <img class="post-image lazyload"
+
+                    data-srcset="https://static.ghost.org/v4.0.0/images/publishing-options.png 400w, https://static.ghost.org/v4.0.0/images/publishing-options.png 750w, https://static.ghost.org/v4.0.0/images/publishing-options.png 960w, https://static.ghost.org/v4.0.0/images/publishing-options.png 1140w, https://static.ghost.org/v4.0.0/images/publishing-options.png 1920w"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-sizes="auto" alt="Customizing your brand and design settings">
+            </a>
+        </div>
+    </div>
+                <div class="post-content kg-canvas u-text-format">
+                    <p>As discussed in the <a href="http://localhost:2368/welcome/">introduction</a> post, one of the best things about Ghost is just how much you can customize to turn your site into something unique. Everything about your layout and design can be changed, so you're not stuck with yet another clone of a social network profile.</p><p>How far you want to go with customization is completely up to you, there's no right or wrong approach! The majority of people use one of Ghost's built-in themes to get started, and then progress to something more bespoke later on as their site grows. </p><p>The best way to get started is with Ghost's branding settings, where you can set up colors, images and logos to fit with your brand.</p><figure class="kg-card kg-image-card kg-width-wide kg-card-hascaption"><img src="https://static.ghost.org/v4.0.0/images/brandsettings.png" class="kg-image" alt loading="lazy" width="3456" height="2338"><figcaption>Ghost Admin → Settings → Branding</figcaption></figure><p>Any Ghost theme that's up to date and compatible with Ghost 4.0 and higher will reflect your branding settings in the preview window, so you can see what your site will look like as you experiment with different options.</p><p>When selecting an accent color, try to choose something which will contrast well with white text. Many themes will use your accent color as the background for buttons, headers and navigational elements. Vibrant colors with a darker hue tend to work best, as a general rule.</p><h2 id="installing-ghost-themes">Installing Ghost themes</h2><p>By default, new sites are created with Ghost's friendly publication theme, called Casper. Everything in Casper is optimized to work for the most common types of blog, newsletter and publication that people create with Ghost — so it's a perfect place to start.</p><p>However, there are hundreds of different themes available to install, so you can pick out a look and feel that suits you best.</p><figure class="kg-card kg-image-card kg-width-wide kg-card-hascaption"><img src="https://static.ghost.org/v4.0.0/images/themesettings.png" class="kg-image" alt loading="lazy" width="3208" height="1618"><figcaption>Ghost Admin → Settings → Theme</figcaption></figure><p>Inside Ghost's theme settings you'll find 4 more official themes that can be directly installed and activated. Each theme is suited to slightly different use-cases.</p><ul><li><strong>Casper</strong> <em>(default)</em> — Made for all sorts of blogs and newsletters</li><li><strong>Edition</strong> — A beautiful minimal template for newsletter authors</li><li><strong>Alto</strong> — A slick news/magazine style design for creators</li><li><strong>London</strong> — A light photography theme with a bold grid</li><li><strong>Ease</strong> — A library theme for organizing large content archives</li></ul><p>And if none of those feel quite right, head on over to the <a href="https://ghost.org/themes/">Ghost Marketplace</a>, where you'll find a huge variety of both free and premium themes.</p><h2 id="building-something-custom">Building something custom</h2><p>Finally, if you want something completely bespoke for your site, you can always build a custom theme from scratch and upload it to your site.</p><p>Ghost's theming template files are very easy to work with, and can be picked up in the space of a few hours by anyone who has just a little bit of knowledge of HTML and CSS. Templates from other platforms can also be ported to Ghost with relatively little effort.</p><p>If you want to take a quick look at the theme syntax to see what it's like, you can <a href="https://github.com/tryghost/casper/">browse through the files of the default Casper theme</a>. We've added tons of inline code comments to make it easy to learn, and the structure is very readable.</p><figure class="kg-card kg-code-card"><pre><code class="language-handlebars">{{#post}}
+&lt;article class="article {{post_class}}"&gt;
+
+    &lt;h1&gt;{{title}}&lt;/h1&gt;
+    
+    {{#if feature_image}}
+    	&lt;img src="{{feature_image}}" alt="Feature image" /&gt;
+    {{/if}}
+    
+    {{content}}
+
+&lt;/article&gt;
+{{/post}}</code></pre><figcaption>A snippet from a post template</figcaption></figure><p>See? Not that scary! But still completely optional. </p><p>If you're interested in creating your own Ghost theme, check out our extensive <a href="https://ghost.org/docs/themes/">theme documentation</a> for a full guide to all the different template variables and helpers which are available.</p>
+                </div>
+                    <div class="post-tags container medium">
+            <a class="post-tag tag-getting-started" href="/tag/getting-started/" title="Getting Started">Getting Started</a>
+    </div>
+            </article>
+            <section class="related-posts container medium">
+        <h3 class="related-title">You Might Also Like...</h3>
+        <div class="post-feed u-hover-wrapper">
+                <article
+    class="post tag-getting-started u-hover-item">
+    <a class="post-link u-permalink" href="/welcome/"></a>
+        <div class="post-media">
+        <div class="u-placeholder same-height rectangle">
+            <a class="post-image-link" href="/welcome/">
+                <img class="post-image lazyload u-object-fit"
+
+                    data-srcset="https://static.ghost.org/v4.0.0/images/welcome-to-ghost.png 400w, https://static.ghost.org/v4.0.0/images/welcome-to-ghost.png 750w, https://static.ghost.org/v4.0.0/images/welcome-to-ghost.png 960w, https://static.ghost.org/v4.0.0/images/welcome-to-ghost.png 1140w, https://static.ghost.org/v4.0.0/images/welcome-to-ghost.png 1920w"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-sizes="auto" alt="Start here for a quick overview of everything you need to know">
+            </a>
+        </div>
+    </div>
+    <div class="post-wrapper">
+        <header class="post-header">
+    <h4 class="post-title">
+        <a class="post-title-link" href="/welcome/">
+        Start here for a quick overview of everything you need to know
+        </a>
+    </h4>
+</header>        <div class="post-excerpt">
+            We've crammed the most important information to help you get started with Ghost into this one post. It's your cheat-sheet to get started, and your shortcut to advanced features.
+        </div>
+        <div class="post-meta">
+        <div class="post-meta-left">
+            <div class="post-author">
+            <a class="post-author-image-link" href="/author/ghost/">
+                <img class="post-author-image lazyload"
+                    data-src="https://static.ghost.org/v4.0.0/images/ghost-user.png"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    alt="Ghost">
+            </a>
+</div>        </div>
+        <div class="post-meta-right">
+            <div class="post-author-name">
+                <a class="post-author-name-link"
+                        href="/author/ghost/">Ghost</a>
+            </div>
+            <div class="post-meta-bottom">
+                <div class="post-date">
+                    <time datetime="2021-03-26">
+                        Mar 26, 2021
+                    </time>
+                </div>
+                <div class="post-length">2 min read</div>
+            </div>
+        </div>
+</div>    </div>
+</article>                <article
+    class="post tag-getting-started u-hover-item">
+    <a class="post-link u-permalink" href="/write/"></a>
+        <div class="post-media">
+        <div class="u-placeholder same-height rectangle">
+            <a class="post-image-link" href="/write/">
+                <img class="post-image lazyload u-object-fit"
+
+                    data-srcset="https://static.ghost.org/v4.0.0/images/writing-posts-with-ghost.png 400w, https://static.ghost.org/v4.0.0/images/writing-posts-with-ghost.png 750w, https://static.ghost.org/v4.0.0/images/writing-posts-with-ghost.png 960w, https://static.ghost.org/v4.0.0/images/writing-posts-with-ghost.png 1140w, https://static.ghost.org/v4.0.0/images/writing-posts-with-ghost.png 1920w"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-sizes="auto" alt="Writing and managing content in Ghost, an advanced guide">
+            </a>
+        </div>
+    </div>
+    <div class="post-wrapper">
+        <header class="post-header">
+    <h4 class="post-title">
+        <a class="post-title-link" href="/write/">
+        Writing and managing content in Ghost, an advanced guide
+        </a>
+    </h4>
+</header>        <div class="post-excerpt">
+            A full overview of all the features built into the Ghost editor, including powerful workflow automations to speed up your creative process.
+        </div>
+        <div class="post-meta">
+        <div class="post-meta-left">
+            <div class="post-author">
+            <a class="post-author-image-link" href="/author/ghost/">
+                <img class="post-author-image lazyload"
+                    data-src="https://static.ghost.org/v4.0.0/images/ghost-user.png"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    alt="Ghost">
+            </a>
+</div>        </div>
+        <div class="post-meta-right">
+            <div class="post-author-name">
+                <a class="post-author-name-link"
+                        href="/author/ghost/">Ghost</a>
+            </div>
+            <div class="post-meta-bottom">
+                <div class="post-date">
+                    <time datetime="2021-03-26">
+                        Mar 26, 2021
+                    </time>
+                </div>
+                <div class="post-length">5 min read</div>
+            </div>
+        </div>
+</div>    </div>
+</article>        </div>
+    </section>
+            </main>
+</div>
+        </div>
+        <footer class="site-footer container">
+        <nav class="footer-nav">
+                <a class="menu-item menu-item-"
+        href="http://localhost:2368/ruo-bu-ren-shi-zi-ji-bi-bu-ren-shi-shang-di/">&lt;&lt;</a>
+    <a class="menu-item menu-item-"
+        href="http://localhost:2368/ren-shi-zai-shang-di-wei-yan-mian-qian/">&gt;&gt;</a>
+
+        </nav>
+    <div class="footer-social">
+            <a class="footer-social-item footer-social-item-facebook"
+                href="https://www.facebook.com/ghost" target="_blank"
+                rel="noopener noreferrer" aria-label="Facebook">
+                <i class="icon icon-facebook"></i>
+            </a>
+            <a class="footer-social-item footer-social-item-twitter"
+                href="https://twitter.com/ghost" target="_blank"
+                rel="noopener noreferrer" aria-label="Twitter">
+                <i class="icon icon-twitter"></i>
+            </a>
+        <a class="footer-social-item footer-social-item-rss"
+            href="https://feedly.com/i/subscription/feed/http://localhost:2368/rss/"
+            target="_blank" rel="noopener noreferrer" aria-label="RSS">
+            <i class="icon icon-rss"></i>
+        </a>
+    </div>
+</footer>    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="/assets/built/main.min.js?v=2c77df2a9b"></script>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/gh/KenHung/Ezra@2.2/dist/ezra.js" 
+        integrity="sha384-nd9OSZaJr/i3p+qvoHgPqzE/X0H6ymwsAPPX0Hazu11sgVHD1Qh2KJU4H+Q1ZFui" 
+        crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/gh/KenHung/Ezra@2.2/dist/ezra-style.css" rel="stylesheet" type="text/css" />
+<script>
+  ezraLinkifier.linkify(document.body);
+</script>
+</body>
+
+</html>
